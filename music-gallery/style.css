@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+	  font-family: "Quicksand", "sans-serif";
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		background-color: #434c5e;
+	}
+
+	.titlebar {
+		background-color: #2e3440;
+		margin-bottom: 5px;
+		color: #e5e9f0;
+		text-align: center;
+	}
+
+	.titlebar h1 {
+		padding: 1rem;
+	}
+
+	.img-container {
+		height: 10rem;
+		width: 100%;
+		padding: 0.7rem;
+	}
+
+	.img-container img {
+		height: 100%;
+		width: 100%;
+	}
+
+/* Style for the music gallery container */
+.music-gallery {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Style for each music item */
+.music-item {
+	width: 250px;
+	margin: 10px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	/* background: linear-gradient(to bottom, #f5c2e7, #cba6f7); */
+	background: linear-gradient(to bottom, #e5e9f0, #3b4252);
+}
+
+/* Style for the audio controls */
+audio {
+	width: 100%;
+}
