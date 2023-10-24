@@ -51,5 +51,41 @@
 
 /* Style for the audio controls */
 audio {
-	width: 100%;
+    width: 100%;
+}
+
+/* Style for the audio control bar */
+input[type="range"] {
+    height: 4px;
+    width: 100%;
+    background: #ccc; /* Background color */
+    border: none;
+    border-radius: 5px;
+}
+
+/* Style for the progress bar */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px; /* Width of the progress thumb */
+    height: 10px; /* Height of the progress thumb */
+    background: #3498db; /* Color of the progress thumb */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Style for the play/pause button */
+audio::-webkit-media-controls-play-button {
+    background-color: #3498db; /* Color of the play button */
+    border-radius: 50%;
+    width: 30px; /* Width of the play button */
+    height: 30px; /* Height of the play button */
+}
+
+/* Remove other control buttons */
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-overflow-button {
+    display: none;
 }
